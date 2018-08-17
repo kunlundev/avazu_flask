@@ -23,9 +23,10 @@ Returns an array of predictions given a JSON object representing independent var
     {"C14": 17753,"C17":1993, "C19": 1063, "C21": 33, "app_category": "07d7df22", "app_id": "ecad2386", "device_model": "be87996b"}
 ]
 ```
+```
 curl -d '[{"C14": 17753,"C17":1993, "C19": 1063, "C21": 33, "app_category": "07d7df22", "app_id": "ecad2386", "device_model": "be87996b"}]' -H "Content-Type: application/json" \
      -X POST http://localhost:3000/predict
-
+```
 and sample output:
 ```
 {"predictions": [0]}
